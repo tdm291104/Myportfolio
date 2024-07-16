@@ -4,26 +4,25 @@ import { skillsData } from "../utils/data/skill"
 import { skillsImage } from "../utils/skill-img"
 function Skills(){
     return (
-        <div id="skills" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
-          <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
-    
+        <div id="skills" className="relative z-50 my-12">
+
           <div className="flex justify-center -translate-y-[1px]">
-            <div className="w-3/4">
-              <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full" />
-            </div>
+                <div className="w-3/4"> 
+                <div className="h-[1px] bg-black w-full" />
+                </div>
           </div>
     
           <div className="flex justify-center my-5 lg:py-8">
             <div className="flex  items-center">
-              <span className="w-24 h-[2px] bg-gradient-to-r from-blue-400 to-violet-500"></span>
-              <span className="bg-gradient-to-r from-blue-500 to-violet-600 w-fit text-white p-2 px-5 text-xl rounded-md">
+              <span className="w-24 h-[2px] bg-green-400"></span>
+              <span className="bg-green-400 w-fit text-white p-2 px-5 text-xl rounded-md">
                 Skills
               </span>
-              <span className="w-24 h-[2px] bg-gradient-to-r from-blue-400 to-violet-500"></span>
+              <span className="w-24 h-[2px] bg-green-400"></span>
             </div>
           </div>
     
-          <div className="w-full my-12 px-10">
+          <div className="w-full my-12">
             <Marquee
               gradient={false}
               speed={80}
@@ -36,7 +35,7 @@ function Skills(){
               {skillsData.map((skill, id) => (
                 <div className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
                   key={id}>
-                  <div className="h-full w-full rounded-lg border border-[#1f223c] bg-gradient-to-r from-blue-300 to-violet-300 shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
+                  <div className="h-full w-full rounded-lg border border-[#1f223c] bg-green-400 shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
                     <div className="flex -translate-y-[1px] justify-center">
                       <div className="w-3/4">
                         <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent" />

@@ -3,7 +3,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { SiLeetcode } from "react-icons/si";
-import imghero from "../svg/hero.jpg"
+import imghero from "../svg/TDM.avif"
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
@@ -30,7 +30,7 @@ export const fadeIn = (direction, delay) => {
 
 function HeroSection() {
   return (
-    <div className="relative flex flex-col items-center justify-between py-4 lg:py-12 bg-gradient-to-r from-blue-400 to-violet-500">
+    <div className="relative flex flex-col items-center py-4 lg:py-12">
         <motion.div 
             variants={fadeIn('up', 0.5)}
             initial = 'hidden'
@@ -48,11 +48,11 @@ function HeroSection() {
             initial = 'hidden'
             whileInView={'show'}
             viewport={{once:false, amount: 0.7}}
-             className="order-2 lg:order-2 flex flex-col items-center justify-center p-2 pb-20 md:pb-10 lg:pt-10">
+             className="order-2 lg:order-2 flex flex-col items-center p-2 pb-20 md:pb-10 lg:pt-10">
         
               
             <h1 className="text-xl text-center" >
-              <span className="text-3xl font-bold"> - Tu Duc Manh - </span>
+              <span className="text-3xl font-bold text-black"> - Tu Duc Manh - </span>
               <br />
               <TypeAnimation sequence={[
                 'Software Developer',
@@ -61,7 +61,7 @@ function HeroSection() {
                 2000
               ]} 
               speed={50}
-              className="text-xl text-gray-200"
+              className="text-xl text-black"
               repeat={Infinity}/>
             </h1>
 
@@ -69,28 +69,28 @@ function HeroSection() {
               <a
                 href="#"
                 target='_blank'
-                className="transition-all text-white hover:scale-125 duration-300"
+                className="transition-all text-black hover:scale-125 hover:text-green-400"
               >
                 <BsGithub size={30} />
               </a>
               <a
                 href="#"
                 target='_blank'
-                className="transition-all text-white hover:scale-125 duration-300"
+                className="transition-all text-black hover:scale-125 hover:text-green-400"
               >
                 <BsLinkedin size={30} />
               </a>
               <a
                 href="#"
                 target='_blank'
-                className="transition-all text-white hover:scale-125 duration-300"
+                className="transition-all text-black hover:scale-125 hover:text-green-400"
               >
                 <FaFacebook size={30} />
               </a>
               <a
                 href="#"
                 target='_blank'
-                className="transition-all text-white hover:scale-125 duration-300"
+                className="transition-all text-black hover:scale-125 hover:text-green-400"
               >
                 <SiLeetcode size={30} />
               </a>
@@ -102,7 +102,7 @@ function HeroSection() {
               viewport={{once:false, amount: 0.7}}
               className="flex items-center gap-3"
             >
-              <a className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-blue-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold" role="button" target="_blank" href="#"
+              <a className="flex items-center gap-1 hover:gap-3 rounded-full bg-green-400 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold" role="button" target="_blank" href="#"
               >
                 <span>Get Resume</span>
                 <MdDownload size={16} />
